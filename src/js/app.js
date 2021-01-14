@@ -286,7 +286,7 @@ let UIController = (() => {
         }</div><div class="right clearfix"><div class="item__value">${formatNumber(
           obj.value,
           type
-        )}</div><div class="item__delete"><button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button></div></div></div>`;
+        )}</div><div class="item__delete"><button class="item__delete--btn"><ion-icon name="close-circle-outline"></ion-icon></button></div></div></div>`;
       } else if (type === "exp") {
         element = DOMstrings.expensesContainer;
         html = `<div class="item clearfix" id="exp-${
@@ -318,7 +318,7 @@ let UIController = (() => {
         }</div><div class="right clearfix"><div class="item__value">${formatNumber(
           obj.value,
           type
-        )}</div><div class="item__percentage">21%</div><div class="item__delete"><button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button></div></div></div>`;
+        )}</div><div class="item__percentage">21%</div><div class="item__delete"><button class="item__delete--btn"><ion-icon name="close-circle-outline"></ion-icon></button></div></div></div>`;
       }
 
       // Dejo solo este a la hora de reemplazar el html por informacion dinamica, porque al usar template strings sin esta linea de codigo, por alguna razon no funciona
